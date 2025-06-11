@@ -1,0 +1,269 @@
+/* Ultra-dark cyberpunk theme for AskSphere */
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&family=Roboto:wght@400;700&display=swap');
+
+/* General styles */
+body {
+  font-family: 'Rajdhani', 'Roboto', sans-serif;
+  background-color: #0a0e17 !important; /* Near-black background */
+  color: #b0b8d6 !important; /* Muted purple-gray for default text */
+  min-height: 100vh;
+}
+
+/* Links */
+a {
+  color: #00f7ff !important; /* Neon cyan */
+  text-decoration: none;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+a:hover {
+  color: #ff007a !important; /* Neon pink on hover */
+  text-shadow: 0 0 8px rgba(255, 0, 122, 0.6);
+}
+
+/* Headings */
+.heading {
+  text-align: center;
+  color: #00f7ff !important; /* Neon cyan */
+  text-shadow: 0 0 5px rgba(0, 247, 255, 0.5);
+}
+
+/* Utility classes */
+.margin-bottom-15 {
+  margin-bottom: 15px;
+}
+
+/* Question list styles */
+.question-list {
+  border: 1px solid #00f7ff; /* Neon cyan border */
+  background-color: #1c2526; /* Dark slate background */
+  padding: 15px;
+  margin: 10px;
+  box-shadow: 0 0 10px rgba(0, 247, 255, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.question-list:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 15px rgba(0, 247, 255, 0.5);
+}
+
+.question-list h4 {
+  margin: 0;
+  padding: 0;
+  color: #00f7ff; /* Neon cyan */
+  text-shadow: 0 0 5px rgba(0, 247, 255, 0.3);
+}
+
+.question-list a, .question-title {
+  font-size: 18px;
+  text-decoration: none;
+  color: #b0b8d6 !important; /* Muted purple-gray */
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.question-list a:hover, .question-title:hover {
+  color: #ff007a !important; /* Neon pink on hover */
+  text-shadow: 0 0 8px rgba(255, 0, 122, 0.6);
+}
+
+/* Answer wrapper */
+.answer-wrapper {
+  border-bottom: 1px solid #00f7ff; /* Neon cyan border */
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+/* My question */
+.my-question {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Navbar styles */
+.asksphere-navbar {
+  background: #0a0e17 !important; /* Deep black */
+  border-bottom: 2px solid #00f7ff; /* Neon cyan border */
+  box-shadow: 0 0 15px rgba(0, 247, 255, 0.2);
+}
+
+.navbar-brand .text-neon {
+  font-size: 1.5rem;
+  color: #00f7ff; /* Neon cyan */
+  text-shadow: 0 0 5px rgba(0, 247, 255, 0.5);
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.navbar-brand:hover .text-neon {
+  transform: scale(1.1);
+  text-shadow: 0 0 10px rgba(0, 247, 255, 0.8);
+}
+
+.navbar-toggler {
+  border: 1px solid #00f7ff;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%2300f7ff' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.nav-link {
+  color: #b0b8d6 !important; /* Muted purple-gray */
+  transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #00f7ff !important; /* Neon cyan on hover */
+  transform: translateY(-2px);
+  text-shadow: 0 0 8px rgba(0, 247, 255, 0.6);
+}
+
+.nav-link.active {
+  color: #ff007a !important; /* Neon pink for active */
+  font-weight: 700;
+  border-bottom: 2px solid #ff007a;
+  text-shadow: 0 0 8px rgba(255, 0, 122, 0.6);
+}
+
+/* Search bar styles */
+.asksphere-search-input {
+  background-color: #1c2526 !important; /* Dark slate */
+  border: 1px solid #00f7ff !important;
+  color: #b0b8d6 !important;
+  font-family: 'Rajdhani', 'Roboto', sans-serif;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.asksphere-search-input::placeholder {
+  color: #6272a4 !important;
+}
+
+.asksphere-search-input:focus {
+  border-color: #ff007a !important;
+  box-shadow: 0 0 10px rgba(255, 0, 122, 0.4);
+  background-color: #1c2526 !important;
+  color: #b0b8d6 !important;
+  outline: none !important;
+}
+
+.asksphere-search-btn {
+  background: #ff007a !important; /* Neon pink button */
+  color: #ffffff !important;
+  font-family: 'Rajdhani', 'Roboto', sans-serif;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.asksphere-search-btn:hover {
+  background: #e6006d !important; /* Darker pink on hover */
+  transform: scale(1.05);
+  box-shadow: 0 0 12px rgba(255, 0, 122, 0.5);
+}
+
+/* Form styles (signup.php, login.php, etc.) */
+.asksphere-container {
+  background: #0a0e17 !important; /* Deep black */
+  min-height: calc(100vh - 70px); /* Full height minus navbar */
+}
+
+.asksphere-form-card {
+  background: #1c2526 !important; /* Dark slate */
+  border: 2px solid #00f7ff !important; /* Neon cyan border */
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 247, 255, 0.4);
+  width: 100%;
+  max-width: 500px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.asksphere-form-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 30px rgba(0, 247, 255, 0.6);
+}
+
+.asksphere-form {
+  background: transparent !important;
+  border: none !important;
+  padding: 0;
+  box-shadow: none !important;
+}
+
+.asksphere-form:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.asksphere-label {
+  color: #b0b8d6 !important;
+  font-size: 0.9rem;
+  display: block;
+  margin-bottom: 5px;
+  transition: color 0.3s ease;
+}
+
+.asksphere-input {
+  background-color: #0a0e17 !important; /* Deep black */
+  border: 1px solid #00f7ff !important;
+  color: #b0b8d6 !important;
+  font-family: 'Rajdhani', 'Roboto', sans-serif;
+  padding: 12px 15px;
+  border-radius: 8px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  width: 100%;
+}
+
+.asksphere-input::placeholder {
+  color: #6272a4 !important;
+  opacity: 1;
+}
+
+.asksphere-input:focus {
+  border-color: #ff007a !important;
+  box-shadow: 0 0 12px rgba(255, 0, 122, 0.5);
+  transform: scale(1.01);
+  background-color: #0a0e17 !important;
+  color: #b0b8d6 !important;
+  outline: none !important;
+}
+
+.asksphere-input:focus + .asksphere-label {
+  color: #ff007a !important;
+}
+
+.asksphere-btn-primary {
+  background: #ff007a !important; /* Neon pink */
+  color: #ffffff !important;
+  border: none !important;
+  font-family: 'Rajdhani', 'Roboto', sans-serif;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.asksphere-btn-primary:hover {
+  background: #e6006d !important;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 0, 122, 0.6);
+}
+
+/* Animations */
+@keyframes glow {
+  0% { text-shadow: 0 0 5px rgba(0, 247, 255, 0.5); }
+  50% { text-shadow: 0 0 10px rgba(0, 247, 255, 0.8); }
+  100% { text-shadow: 0 0 5px rgba(0, 247, 255, 0.5); }
+}
+
+.animate-glow {
+  animation: glow 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); box-shadow: 0 0 10px rgba(255, 0, 122, 0.4); }
+  50% { transform: scale(1.03); box-shadow: 0 0 15px rgba(255, 0, 122, 0.6); }
+  100% { transform: scale(1); box-shadow: 0 0 10px rgba(255, 0, 122, 0.4); }
+}
+
+.animate-pulse {
+  animation: pulse 2s infinite;
+}
