@@ -1,4 +1,3 @@
-# AskSphere
 # 💬 AskSphere
 
 AskSphere is a lightweight and minimalist Q&A web application built using **PHP** and **SQLite**. It allows users to ask questions, reply to existing questions, and like/dislike answers — all without the need for a heavy framework or complex setup.
